@@ -1,0 +1,15 @@
+<div *ngIf="article" class="article-container">
+    <div class="left-side">
+        <img class="news-image"
+        [src]="article['urlToImage']"
+        [alt]="">
+    </div>
+    <div class="right-side">
+        <h2>{{ article.title }}</h2>
+        <p> <em>  Author: {{ article.author }} Source: {{ article.source.name }}</em></p>
+        <article>{{ article.content }} </article>
+        <p class="url"> <em> Go to news source: <a [href]="article.url" target="_blank"> Link</a></em></p>
+        <button (click)="saveCurrentNews(article.title)">Save news for later</button>
+    </div>
+</div>
+

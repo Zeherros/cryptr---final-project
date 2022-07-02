@@ -1,0 +1,15 @@
+.header{
+    color: #fcba03;
+    text-align: center;
+}
+:host {
+    color: #1F2833;
+    display:flex;
+}
+#tvchart{
+    text-align: center;
+    margin-left: 200px;
+}
+#menu{
+    text-align: center;
+}

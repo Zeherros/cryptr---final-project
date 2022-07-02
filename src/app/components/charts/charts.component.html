@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehnical charts</title>
+  
+</head>
+<body>
+  <header class="header">Tehnical chart for {{symbol}} </header>
+  
+  <div id="menu">
+    <button mat-button [matMenuTriggerFor]="menu">Change Market</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="changeCrypto('BTCUSDC')">Bitcoin</button>
+      <button mat-menu-item (click)="changeCrypto('ETHUSDC')">Ethereum</button>
+    </mat-menu>
+  </div>
+  <div id="timemenu"> 
+    <button mat-button [matMenuTriggerFor]="timemenu">Change Timeframe</button>
+    <mat-menu #timemenu="matMenu">
+      <button mat-menu-item>4H</button>
+      <button mat-menu-item>1H</button>
+    </mat-menu>
+  </div>
+  <div id="tvchart">
+  </div>
+
+</body>
+</html>

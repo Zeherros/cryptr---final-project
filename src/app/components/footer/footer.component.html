@@ -1,0 +1,30 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<mat-accordion>
+    <mat-expansion-panel hideToggle class="panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         Total marketcap
+        </mat-panel-title>
+        <mat-panel-description>
+          {{totalMarketCap | currency}} 
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>Bitcoin dominance {{coinMarketData?.data?.btc_dominance | number}} %</p>
+      <p>Ethereum dominance {{coinMarketData?.data?.eth_dominance | number}} %</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="panel" (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header >
+        <mat-panel-title >
+          Self aware panel
+        </mat-panel-title>
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  

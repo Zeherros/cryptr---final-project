@@ -1,0 +1,17 @@
+.news-image {
+    width: 20rem;
+    height: 10rem;
+}
+.news-container {
+    border: 3px solid #7703fc;
+    display: flex;
+    margin: 5px;
+    align-items: stretch;
+    background-color: #1F2833;
+}
+:host {
+    color: #fcba03;
+}
+.right-side {
+    margin: 5px;
+}

@@ -1,0 +1,9 @@
+
+.panel {
+    background-color: #1F2833;
+    font-weight: bold;
+    font-size:larger;
+}
+mat-panel-title, mat-panel-description, p  {
+    color: #fcba03;
+}
