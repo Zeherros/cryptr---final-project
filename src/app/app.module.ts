@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { SavednewsComponent } from './savednews/savednews.component';
 import { ArticleComponent } from './components/article/article.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import {MatMenuModule} from '@angular/material/menu';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

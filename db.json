@@ -2,20 +2,6 @@
   "news": [
     {
       "source": {
-        "id": "engadget",
-        "name": "Engadget"
-      },
-      "author": "Amrita Khalid",
-      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
-      "description": "Crypto lender Celsius Network opted to freeze customer withdrawals and other transactions on Sunday, leaving its nearly two million users unable to access their funds. Now, state security boards in Alabama, Kentucky, New Jersey, Texas and Washington have laun…",
-      "url": "https://www.engadget.com/celsius-network-freeze-state-securities-board-investigation-231238212.html",
-      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2022-06/46f0cc30-ec69-11ec-af5f-6e1e41f80e8e",
-      "publishedAt": "2022-06-16T23:12:38Z",
-      "content": "Crypto lender Celsius Network opted to freeze customer withdrawals and other transactions on Sunday, leaving its nearly two million users unable to access their funds. Now, state security boards in A… [+1785 chars]",
-      "id": 2
-    },
-    {
-      "source": {
         "id": null,
         "name": "Gizmodo.com"
       },
@@ -41,6 +27,20 @@
       "publishedAt": "2022-06-13T16:20:00Z",
       "content": "LONDON, June 13 (Reuters) - Bitcoin's slump on Monday after major U.S. crypto lending company Celsius Network froze withdrawals should remind investors that most crypto-assets have no intrinsic value… [+1057 chars]",
       "id": 4
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Rebecca Cairns",
+      "title": "Crypto is crashing but the tech behind it could save luxury brands billions",
+      "description": "Counterfeits are a huge problem for high-end designers around the globe: luxury brands lost $98 billion worth of sales to counterfeits in 2017 alone.",
+      "url": "https://www.cnn.com/2022/06/26/business/aura-blockchain-luxury-counterfeit-hnk-spc-intl/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/220531164927-counterfeit-luxury-goods-prada-bags-file.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2022-06-27T01:38:42Z",
+      "content": "Counterfeits are a huge problem for high-end designers around the globe: luxury brands lost $98 billion worth of sales to counterfeits in 2017 alone.\r\nThese losses can damage both profit and reputati… [+4840 chars]",
+      "id": 5
     }
   ]
 }

@@ -6,10 +6,16 @@
     color: #1F2833;
     display:flex;
 }
-#tvchart{
+#tvchart {
     text-align: center;
     margin-left: 200px;
 }
-#menu{
+#menu {
+    text-align: center;
+}
+#timemenu {
+    text-align: center;
+}
+#matmenu {
     text-align: center;
 }

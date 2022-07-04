@@ -30,8 +30,14 @@ export class CoinserviceService {
   addSavedNews(article:IArticle):Observable<IArticle> {
     return this.http.post<IArticle>('http://localhost:3000/news', article);
   }
-  getSavedNews():Observable<IArticle> {
-    return this.http.get<IArticle>('http://localhost:3000/news');
+  getSavedNews():Observable<IArticle[]> {
+    return this.http.get<IArticle[]>('http://localhost:3000/news');
+  }
+  editSavedNews(article):Observable<IArticle> {
+    return this.http.put<IArticle>(`http://localhost:3000/news/${article.id}`, article)
+  }
+  deleteSavedNews(article):Observable<void> {
+    return this.http.delete<void>(`http://localhost:3000/news/${article.id}`);
   }
 }
 

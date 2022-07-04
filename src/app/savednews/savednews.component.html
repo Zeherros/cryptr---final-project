@@ -1,6 +1,26 @@
-<ng-container *ngIf="">
+<ng-container *ngIf="!articlesToShow.length">
     <p> No saved news</p>
 </ng-container>
-<div class="saved-article" >
-    
+<div class="saved-articles" *ngFor="let article of articlesToShow" >
+        <h2>{{ article.title }}</h2>
+        <p> <em>  Author: {{ article.author }} Source: {{ article.source.name }}</em></p>
+        <article>{{ article.content }} </article>
+        <div>
+        <form id="article-edit">
+        <label for="article-title">Article new title</label>
+        <input  [(ngModel)]="article.title" type="text" name="article-title" id="article-title">
+        
+        <div>
+        <label for="article-content"> Article new content</label>
+        <input [(ngModel)]="article.content" type="text" name="article-content" id="article-content" >
+        </div>
+        <div>
+            <label for="author">Edited Author</label>
+            <input [(ngModel)]="article.author" type="text" name="author" id="author" >
+            </div>
+        <div>
+            <button (click)="editArticle(article)">Edit article</button>
+            <button (click)="deleteArticle(article)">Delete article</button>
+        </div>
+    </form>
 </div>
