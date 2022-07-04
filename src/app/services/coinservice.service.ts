@@ -27,11 +27,11 @@ export class CoinserviceService {
   getChartData(symbol:string, interval:string):Observable<Array<Array<string | number>>> {
     return this.http.get<ICandlestickResponse>(`http://localhost:3300/${symbol}/${interval}`);
   }
-  addSavedNews(title:ISavedNews):Observable<ISavedNews> {
-    return this.http.post<ISavedNews>('http://localhost:3000/news', title);
+  addSavedNews(article:IArticle):Observable<IArticle> {
+    return this.http.post<IArticle>('http://localhost:3000/news', article);
   }
-  getSavedNews():Observable<ISavedNews> {
-    return this.http.get<ISavedNews>('http://localhost:3000/news');
+  getSavedNews():Observable<IArticle> {
+    return this.http.get<IArticle>('http://localhost:3000/news');
   }
 }
 

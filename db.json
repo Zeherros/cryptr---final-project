@@ -1,70 +1,46 @@
 {
   "news": [
     {
-      "id": 1,
-      "title": "article-title",
-      "author": "article-author"
-    },
-    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Amrita Khalid",
+      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
+      "description": "Crypto lender Celsius Network opted to freeze customer withdrawals and other transactions on Sunday, leaving its nearly two million users unable to access their funds. Now, state security boards in Alabama, Kentucky, New Jersey, Texas and Washington have laun…",
+      "url": "https://www.engadget.com/celsius-network-freeze-state-securities-board-investigation-231238212.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2022-06/46f0cc30-ec69-11ec-af5f-6e1e41f80e8e",
+      "publishedAt": "2022-06-16T23:12:38Z",
+      "content": "Crypto lender Celsius Network opted to freeze customer withdrawals and other transactions on Sunday, leaving its nearly two million users unable to access their funds. Now, state security boards in A… [+1785 chars]",
       "id": 2
     },
     {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Lucas Ropek",
+      "title": "Americans Have Lost $1 Billion to Crypto Scams Since Last Year, Feds Say",
+      "description": "Investing in Web3, the supposedly “transformative” environment of blockchain and cryptocurrency technologies, continues to be a revolutionary new way to lose a whole lot of money. Read more...",
+      "url": "https://gizmodo.com/crypto-scams-1-billion-ftc-bitcoin-ether-tether-1849014424",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/448dbaaa95a8867ee47301c82a442cf9.jpg",
+      "publishedAt": "2022-06-04T11:30:00Z",
+      "content": "Investing in Web3, the supposedly transformative environment of blockchain and cryptocurrency technologies, continues to be a revolutionary new way to lose a whole lot of money. \r\nA study from the Fe… [+3004 chars]",
       "id": 3
     },
     {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": null,
+      "title": "BoE's Bailey: latest crypto turmoil reinforces concerns - Reuters.com",
+      "description": "Bitcoin's slump on Monday after major U.S. crypto lending company Celsius Network froze withdrawals should remind investors that most crypto-assets have no intrinsic value, Bank of England Governor Andrew Bailey said.",
+      "url": "https://www.reuters.com/world/uk/boes-bailey-latest-crypto-turmoil-reinforces-concerns-2022-06-13/",
+      "urlToImage": "https://www.reuters.com/resizer/75vcVmI2QGYlZ1Yj9bCvcZzwWuo=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/RJM3T7OU45P2TDY2O6Z5CQTHFU.jpg",
+      "publishedAt": "2022-06-13T16:20:00Z",
+      "content": "LONDON, June 13 (Reuters) - Bitcoin's slump on Monday after major U.S. crypto lending company Celsius Network froze withdrawals should remind investors that most crypto-assets have no intrinsic value… [+1057 chars]",
       "id": 4
-    },
-    {
-      "headers": {
-        "author": "Amrita Khalid",
-        "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze"
-      },
-      "id": 5
-    },
-    {
-      "headers": {
-        "author": "Amrita Khalid",
-        "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze"
-      },
-      "id": 6
-    },
-    {
-      "author": "Amrita Khalid",
-      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
-      "id": 7
-    },
-    {
-      "author": "Amrita Khalid",
-      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
-      "id": 8
-    },
-    {
-      "author": "Mack DeGeurin",
-      "title": "Three Arrows Capital Ordered to Liquidate All Assets After Defaulting on $675M Bitcoin Loans",
-      "id": 9
-    },
-    {
-      "author": "Amrita Khalid",
-      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
-      "id": 10
-    },
-    {
-      "author": "Richard Lawler",
-      "title": "DeFi lending giant Celsius halts withdrawals",
-      "id": 11
-    },
-    [
-      "El Salvador's Bitcoin investment suffers amid crypto meltdown"
-    ],
-    {
-      "id": 13
-    },
-    [
-      "El Salvador's Bitcoin investment suffers amid crypto meltdown",
-      "El Salvador's Bitcoin investment suffers amid crypto meltdown"
-    ],
-    [
-      "El Salvador's Bitcoin investment suffers amid crypto meltdown"
-    ]
+    }
   ]
 }

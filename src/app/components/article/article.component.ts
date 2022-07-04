@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IArticle, IArticles, INews, INewsSaved, ISavedNews } from 'src/app/interfaces/news.interface';
-import { NewsComponent} from 'src/app/components/news/news.component'
+import { IArticle, IArticles, INews } from 'src/app/interfaces/news.interface';
 import { CoinserviceService } from 'src/app/services/coinservice.service';
 import { ActivatedRoute } from '@angular/router';
-import { Readability } from '@mozilla/readability';
-import  JSDOM  from "jsdom";
 import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-article',
@@ -15,7 +12,7 @@ export class ArticleComponent implements OnInit {
   article: IArticle;
   articleUrl: string;
   newsList : IArticles[];
-  savedNewsList:ISavedNews = [];
+  savedNews:INews;
   constructor( private activatedRoute: ActivatedRoute,
               private coinservice: CoinserviceService,
               private http: HttpClient) { }
@@ -34,14 +31,14 @@ export class ArticleComponent implements OnInit {
       (err : Error) : void => console.log(err.message));
   }
   
-  saveCurrentNews(articleTitle) {
-    this.coinservice.getNewsArticle(articleTitle).subscribe(
+  saveCurrentNews(title) {
+    this.coinservice.getNewsArticle(title).subscribe(
       (news) : void => {
         this.article = news.articles[0];
-        this.savedNewsList.push(this.article.title)
-        console.log(this.savedNewsList);
-        this.coinservice.addSavedNews(this.savedNewsList).subscribe(
-          (newsBeingSaved) => {}
+        this.coinservice.addSavedNews(this.article).subscribe(
+          (newsBeingSaved) => {
+            console.log(newsBeingSaved);
+          }
         )
       }
     )

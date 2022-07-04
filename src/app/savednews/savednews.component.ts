@@ -12,7 +12,7 @@ export class SavednewsComponent implements OnInit {
   newsList = [];
   savednewsList:ISavedNews[];
   article:IArticle;
-  articleToShow:INews[]=[];
+  articlesToShow:IArticle[]=[];
   constructor(private coinservice: CoinserviceService,
               private activatedRoute: ActivatedRoute) { }
 
@@ -24,29 +24,17 @@ export class SavednewsComponent implements OnInit {
     this.coinservice.getSavedNews().subscribe(
       (savednews) => {
        console.log(savednews);
-       for (const j in savednews) {
-        this.coinservice.getNewsArticle(savednews[j]).subscribe(
-          (newsgot) => {
-            if(newsgot.totalResults === 1){
-              this.articleToShow.push(newsgot)  
-            }
+         this.articlesToShow.push(savednews);
+         console.log(this.articlesToShow);
+         
+
         }
         )
        }
-       console.log(this.articleToShow);
-       
-          // for (const i in newsgot) {
-          //   if(newsgot.articles[0].title === this.newsList[i]){
-          //     this.articleToShow.push(this.newsList[i]);
-          //     console.log(this.articleToShow);
-              
-          //   }
-          // }
+      
          }
-       )  
-        }
-         
-        }
+   
+
       
         
     
