@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ICandlestickResponse, INews } from '../interfaces/news.interface';
+import { IArticle, IArticles, ICandlestickResponse, INews, ISavedNews } from '../interfaces/news.interface';
 import { IMarketCap } from '../interfaces/news.interface';
 import  JSDOM  from "jsdom"
 import { Readability } from '@mozilla/readability';
@@ -19,7 +19,6 @@ export class CoinserviceService {
     return this.http.get<IMarketCap>('http://localhost:3100');
   }
   getNewsArticle(title:string): Observable<INews> {
-    console.log(title)
     return this.http.get<INews>(`https://newsapi.org/v2/everything?q=${title}&apiKey=34851274661c4bd3bdd7000545544440`);
   }
   getNewsContent(url:string):Observable<string> {
@@ -28,11 +27,11 @@ export class CoinserviceService {
   getChartData(symbol:string, interval:string):Observable<Array<Array<string | number>>> {
     return this.http.get<ICandlestickResponse>(`http://localhost:3300/${symbol}/${interval}`);
   }
-  addSavedNews(title:string):Observable<INews> {
-    return this.http.post<INews>('http://localhost:3000/news', title);
+  addSavedNews(title:ISavedNews):Observable<ISavedNews> {
+    return this.http.post<ISavedNews>('http://localhost:3000/news', title);
   }
-  getSavedNews():Observable<INews> {
-    return this.http.get<INews>('http://localhost:3000/news');
+  getSavedNews():Observable<ISavedNews> {
+    return this.http.get<ISavedNews>('http://localhost:3000/news');
   }
 }
 

@@ -39,6 +39,8 @@ export interface IArticles {
     articles: IArticle[]
     
 }
+export type ISavedNews = Array<string>;
+
 export interface IMarketCap {
     status: {
         timestamp: string;
@@ -101,4 +103,5 @@ export interface IMarketCap {
         last_updated: string;
         }
         },
+
     }   

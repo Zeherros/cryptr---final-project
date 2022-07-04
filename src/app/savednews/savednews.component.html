@@ -1,6 +1,5 @@
-<ng-container *ngIf="!newsList.length">
+<ng-container *ngIf="!articleToShow.length">
     <p> No saved news</p>
 </ng-container>
-<ng-container *ngIf="newsList.length">
-    
-</ng-container>
+    {{articleToShow[0].articles[0].title}}
+

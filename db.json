@@ -2,8 +2,69 @@
   "news": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
+      "title": "article-title",
+      "author": "article-author"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "headers": {
+        "author": "Amrita Khalid",
+        "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze"
+      },
+      "id": 5
+    },
+    {
+      "headers": {
+        "author": "Amrita Khalid",
+        "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze"
+      },
+      "id": 6
+    },
+    {
+      "author": "Amrita Khalid",
+      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
+      "id": 7
+    },
+    {
+      "author": "Amrita Khalid",
+      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
+      "id": 8
+    },
+    {
+      "author": "Mack DeGeurin",
+      "title": "Three Arrows Capital Ordered to Liquidate All Assets After Defaulting on $675M Bitcoin Loans",
+      "id": 9
+    },
+    {
+      "author": "Amrita Khalid",
+      "title": "Crypto lender Celsius is being investigated by multiple states after transactions freeze",
+      "id": 10
+    },
+    {
+      "author": "Richard Lawler",
+      "title": "DeFi lending giant Celsius halts withdrawals",
+      "id": 11
+    },
+    [
+      "El Salvador's Bitcoin investment suffers amid crypto meltdown"
+    ],
+    {
+      "id": 13
+    },
+    [
+      "El Salvador's Bitcoin investment suffers amid crypto meltdown",
+      "El Salvador's Bitcoin investment suffers amid crypto meltdown"
+    ],
+    [
+      "El Salvador's Bitcoin investment suffers amid crypto meltdown"
+    ]
   ]
 }

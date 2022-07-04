@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
   }
   panelOpenState = false;
   getMarketData(): void {
-    this.http.get<IMarketCap>("http://localhost:3000").subscribe(
+    this.http.get<IMarketCap>("http://localhost:3100").subscribe(
       (coinData) => {
         this.coinMarketData = coinData;
         this.totalMarketCap = this.coinMarketData.data.quote['USD'].total_market_cap;
